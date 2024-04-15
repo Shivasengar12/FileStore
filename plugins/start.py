@@ -83,8 +83,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("TOPPERS DISCUSSION✨🤍", url="https://t.me/ToppersChat")
-                    InlineKeyboardButton("𝖱𝖠𝖭𝖪𝖤𝖱𝖲 𝖴𝖭𝖨𝖮𝖭 ✨🤍", url="https://t.me/RankersUnion")
+                    InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
+                    InlineKeyboardButton('🍁 ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/OtakuFlix_Network/4639')
                 ]
             ]
                 )
@@ -197,4 +197,3 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
         await msg.delete()
-
